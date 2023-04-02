@@ -1,7 +1,7 @@
 import sqlite3
 
 
-def create_tables(connection) -> str:
+def create_tables(connection) -> None:
     cursor = connection.cursor()
 
     cursor.execute('''
@@ -138,7 +138,6 @@ def program(connection) -> None:
                 else:
                     print("GoodBye!")
                     break
-
 
 
 def main():
